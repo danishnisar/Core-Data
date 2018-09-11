@@ -10,16 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var sharedme:PersistanceInstance?
+    @IBOutlet weak var textholder: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view, typically from a nib.
+        
+        sharedme = PersistanceInstance.shared
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+    @IBAction func save(_ sender: UIBarButtonItem) {
+        
+        let saveNotes = Employ(context: sharedme!.context)
+        saveNotes.message = textholder.text
+        sharedme!.save()
     }
-
+    
 
 }
 

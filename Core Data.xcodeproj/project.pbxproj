@@ -13,6 +13,12 @@
 		72A5B4EB21465928006ED438 /* Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B4E921465928006ED438 /* Core_Data.xcdatamodeld */; };
 		72A5B4ED21465940006ED438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B4EC21465940006ED438 /* Assets.xcassets */; };
 		72A5B4F021465940006ED438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B4EE21465940006ED438 /* LaunchScreen.storyboard */; };
+		72A5B4FE2147D178006ED438 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B4FD2147D178006ED438 /* MainVC.swift */; };
+		72A5B5012147D28D006ED438 /* CellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B4FF2147D28D006ED438 /* CellVC.swift */; };
+		72A5B5022147D28D006ED438 /* CellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B5002147D28D006ED438 /* CellVC.xib */; };
+		72A5B5042147D715006ED438 /* PersistanceInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B5032147D714006ED438 /* PersistanceInstance.swift */; };
+		72A5B5072147DA29006ED438 /* Employ+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B5052147DA29006ED438 /* Employ+CoreDataClass.swift */; };
+		72A5B5082147DA29006ED438 /* Employ+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B5062147DA29006ED438 /* Employ+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		72A5B4EC21465940006ED438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A5B4EF21465940006ED438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A5B4F121465940006ED438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A5B4FD2147D178006ED438 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		72A5B4FF2147D28D006ED438 /* CellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellVC.swift; sourceTree = "<group>"; };
+		72A5B5002147D28D006ED438 /* CellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellVC.xib; sourceTree = "<group>"; };
+		72A5B5032147D714006ED438 /* PersistanceInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceInstance.swift; sourceTree = "<group>"; };
+		72A5B5052147DA29006ED438 /* Employ+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employ+CoreDataClass.swift"; sourceTree = "<group>"; };
+		72A5B5062147DA29006ED438 /* Employ+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employ+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +68,14 @@
 		72A5B4E121465928006ED438 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				72A5B5052147DA29006ED438 /* Employ+CoreDataClass.swift */,
+				72A5B5062147DA29006ED438 /* Employ+CoreDataProperties.swift */,
+				72A5B5032147D714006ED438 /* PersistanceInstance.swift */,
 				72A5B4E221465928006ED438 /* AppDelegate.swift */,
 				72A5B4E421465928006ED438 /* ViewController.swift */,
+				72A5B4FD2147D178006ED438 /* MainVC.swift */,
+				72A5B4FF2147D28D006ED438 /* CellVC.swift */,
+				72A5B5002147D28D006ED438 /* CellVC.xib */,
 				72A5B4E621465928006ED438 /* Main.storyboard */,
 				72A5B4EC21465940006ED438 /* Assets.xcassets */,
 				72A5B4EE21465940006ED438 /* LaunchScreen.storyboard */,
@@ -125,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A5B5022147D28D006ED438 /* CellVC.xib in Resources */,
 				72A5B4F021465940006ED438 /* LaunchScreen.storyboard in Resources */,
 				72A5B4ED21465940006ED438 /* Assets.xcassets in Resources */,
 				72A5B4E821465928006ED438 /* Main.storyboard in Resources */,
@@ -138,9 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A5B5012147D28D006ED438 /* CellVC.swift in Sources */,
 				72A5B4E521465928006ED438 /* ViewController.swift in Sources */,
+				72A5B5042147D715006ED438 /* PersistanceInstance.swift in Sources */,
+				72A5B5082147DA29006ED438 /* Employ+CoreDataProperties.swift in Sources */,
+				72A5B5072147DA29006ED438 /* Employ+CoreDataClass.swift in Sources */,
 				72A5B4E321465928006ED438 /* AppDelegate.swift in Sources */,
 				72A5B4EB21465928006ED438 /* Core_Data.xcdatamodeld in Sources */,
+				72A5B4FE2147D178006ED438 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

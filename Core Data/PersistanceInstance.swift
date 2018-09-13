@@ -57,6 +57,12 @@ final class PersistanceInstance {
 
     }
     
+    func deleteObj(object:NSManagedObject){
+        context.delete(object)
+        save()
+        
+    }
+    
     
     
     

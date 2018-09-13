@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 
-public class Employ: NSManagedObject {
+public class Noted: NSManagedObject {
 
 }

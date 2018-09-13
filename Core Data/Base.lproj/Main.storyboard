@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,24 +19,28 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t0G-In-x7x">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.3318974743150685" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zlv-Lr-Iy1" firstAttribute="trailing" secondItem="t0G-In-x7x" secondAttribute="trailing" id="A7t-zq-ajC"/>
-                            <constraint firstItem="zlv-Lr-Iy1" firstAttribute="bottom" secondItem="t0G-In-x7x" secondAttribute="bottom" id="EJ4-xm-W2e"/>
-                            <constraint firstItem="t0G-In-x7x" firstAttribute="leading" secondItem="zlv-Lr-Iy1" secondAttribute="leading" id="LGV-Rr-0bm"/>
-                            <constraint firstItem="t0G-In-x7x" firstAttribute="top" secondItem="zlv-Lr-Iy1" secondAttribute="top" id="knp-6x-ixO"/>
+                            <constraint firstItem="t0G-In-x7x" firstAttribute="leading" secondItem="zlv-Lr-Iy1" secondAttribute="leading" id="NOl-py-ndz"/>
+                            <constraint firstItem="t0G-In-x7x" firstAttribute="trailing" secondItem="zlv-Lr-Iy1" secondAttribute="trailing" id="Zxt-aW-eTU"/>
+                            <constraint firstItem="t0G-In-x7x" firstAttribute="top" secondItem="R31-qM-uMD" secondAttribute="top" constant="64" id="ked-Xj-xy9"/>
+                            <constraint firstItem="zlv-Lr-Iy1" firstAttribute="bottom" secondItem="t0G-In-x7x" secondAttribute="bottom" id="lh8-hz-Ug3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zlv-Lr-Iy1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Notes" id="0mD-pZ-bj2">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="ngX-HG-aDT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="ngX-HG-aDT">
+                            <connections>
+                                <action selector="Compose:" destination="0S5-IT-OFC" id="BYo-WU-8V6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="noteTable" destination="t0G-In-x7x" id="IZt-t6-MOa"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="detailvc" id="GEE-WV-5St"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="detail" id="ap9-3s-XAK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exn-EF-RoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -78,6 +81,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="saveOutlet" destination="oyP-ur-Z3i" id="8Eo-c6-GzQ"/>
+                        <outlet property="saveTitle" destination="oyP-ur-Z3i" id="t02-I9-TJm"/>
                         <outlet property="textholder" destination="0cO-fY-t65" id="LNF-q3-TVz"/>
                     </connections>
                 </viewController>

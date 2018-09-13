@@ -17,8 +17,8 @@
 		72A5B5012147D28D006ED438 /* CellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B4FF2147D28D006ED438 /* CellVC.swift */; };
 		72A5B5022147D28D006ED438 /* CellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B5002147D28D006ED438 /* CellVC.xib */; };
 		72A5B5042147D715006ED438 /* PersistanceInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B5032147D714006ED438 /* PersistanceInstance.swift */; };
-		72A5B5072147DA29006ED438 /* Employ+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B5052147DA29006ED438 /* Employ+CoreDataClass.swift */; };
-		72A5B5082147DA29006ED438 /* Employ+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B5062147DA29006ED438 /* Employ+CoreDataProperties.swift */; };
+		72A5B50B2147F15A006ED438 /* Noted+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B5092147F15A006ED438 /* Noted+CoreDataClass.swift */; };
+		72A5B50C2147F15A006ED438 /* Noted+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B50A2147F15A006ED438 /* Noted+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		72A5B4FF2147D28D006ED438 /* CellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellVC.swift; sourceTree = "<group>"; };
 		72A5B5002147D28D006ED438 /* CellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellVC.xib; sourceTree = "<group>"; };
 		72A5B5032147D714006ED438 /* PersistanceInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceInstance.swift; sourceTree = "<group>"; };
-		72A5B5052147DA29006ED438 /* Employ+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employ+CoreDataClass.swift"; sourceTree = "<group>"; };
-		72A5B5062147DA29006ED438 /* Employ+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employ+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		72A5B5092147F15A006ED438 /* Noted+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Noted+CoreDataClass.swift"; sourceTree = "<group>"; };
+		72A5B50A2147F15A006ED438 /* Noted+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Noted+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 		72A5B4E121465928006ED438 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				72A5B5052147DA29006ED438 /* Employ+CoreDataClass.swift */,
-				72A5B5062147DA29006ED438 /* Employ+CoreDataProperties.swift */,
+				72A5B5092147F15A006ED438 /* Noted+CoreDataClass.swift */,
+				72A5B50A2147F15A006ED438 /* Noted+CoreDataProperties.swift */,
 				72A5B5032147D714006ED438 /* PersistanceInstance.swift */,
 				72A5B4E221465928006ED438 /* AppDelegate.swift */,
 				72A5B4E421465928006ED438 /* ViewController.swift */,
@@ -160,8 +160,8 @@
 				72A5B5012147D28D006ED438 /* CellVC.swift in Sources */,
 				72A5B4E521465928006ED438 /* ViewController.swift in Sources */,
 				72A5B5042147D715006ED438 /* PersistanceInstance.swift in Sources */,
-				72A5B5082147DA29006ED438 /* Employ+CoreDataProperties.swift in Sources */,
-				72A5B5072147DA29006ED438 /* Employ+CoreDataClass.swift in Sources */,
+				72A5B50C2147F15A006ED438 /* Noted+CoreDataProperties.swift in Sources */,
+				72A5B50B2147F15A006ED438 /* Noted+CoreDataClass.swift in Sources */,
 				72A5B4E321465928006ED438 /* AppDelegate.swift in Sources */,
 				72A5B4EB21465928006ED438 /* Core_Data.xcdatamodeld in Sources */,
 				72A5B4FE2147D178006ED438 /* MainVC.swift in Sources */,
@@ -241,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -295,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -308,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6L6HHJ7A3;
 				INFOPLIST_FILE = "Core Data/Info.plist";
@@ -315,8 +316,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nativebrains.Core-Data";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nativebrains.Notes-Bag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6L6HHJ7A3;
 				INFOPLIST_FILE = "Core Data/Info.plist";
@@ -333,8 +336,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nativebrains.Core-Data";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nativebrains.Notes-Bag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
